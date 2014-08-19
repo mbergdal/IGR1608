@@ -7,7 +7,7 @@ public class Parser {
 	public void Start() {
 		Translator translator = new Translator();
 		while (true){
-			System.out.println("Enter short form: ");
+			System.out.print("Enter short form (\"exit\" to quit): ");
 			Scanner scanner = new Scanner(System.in);
 			String input = scanner.next();
 			if (input.toLowerCase().equals("exit")){
