@@ -1,3 +1,6 @@
+winnersFile = "winners.txt"
+notPresentFile = "notPresent.txt"
+
 def getArrayFromFile filename
 	array = []
 	File.open(filename, :encoding => 'UTF-8').each_line do |line|
@@ -9,9 +12,9 @@ end
 
 def setUpStudents filename
 	students = getArrayFromFile(filename)
-	studentsNotPresent = getArrayFromFile("notPresent.txt")
+	studentsNotPresent = getArrayFromFile(notPresentFile)
 	puts "Students not present: " + studentsNotPresent.to_s
-	previousWinners = getArrayFromFile("winners.txt")
+	previousWinners = getArrayFromFile(winnersFile)
 	puts "Previous winners: " + previousWinners.to_s
 	availableStudents = students - previousWinners - studentsNotPresent
 	return availableStudents
@@ -46,11 +49,16 @@ def eliminateStudents availableStudents
 	return availableStudents
 end
 
+def writeWinnerToFile winner
+	File.Open(winnersFile, 
+end
+
 if ARGV.length > 0
 	availableStudents = setUpStudents(ARGV[0])
 	availableStudents = eliminateStudents(availableStudents)	
 	winner = availableStudents
 	displayWinner(winner)
+	writeWinnerToFile(winner)
 else
 	puts "No input file given"
 end
