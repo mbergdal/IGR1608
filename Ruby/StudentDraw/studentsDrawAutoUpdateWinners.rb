@@ -1,5 +1,5 @@
-winnersFile = "winners.txt"
-notPresentFile = "notPresent.txt"
+$winnersFile = "winners.txt"
+$notPresentFile = "notPresent.txt"
 
 def getArrayFromFile filename
 	array = []
@@ -12,9 +12,10 @@ end
 
 def setUpStudents filename
 	students = getArrayFromFile(filename)
-	studentsNotPresent = getArrayFromFile(notPresentFile)
+	puts "All students: " + students.to_s
+	studentsNotPresent = getArrayFromFile($notPresentFile)
 	puts "Students not present: " + studentsNotPresent.to_s
-	previousWinners = getArrayFromFile(winnersFile)
+	previousWinners = getArrayFromFile($winnersFile)
 	puts "Previous winners: " + previousWinners.to_s
 	availableStudents = students - previousWinners - studentsNotPresent
 	return availableStudents
@@ -29,7 +30,7 @@ def displayWinner winner
 	puts
 	print "And the winner is..."
 	sleep(2)
-	puts winner[0]
+	puts winner
 	puts "Congratulations!!!"
 end
 
@@ -50,15 +51,21 @@ def eliminateStudents availableStudents
 end
 
 def writeWinnerToFile winner
-	File.Open(winnersFile, 
+	file = File.open($winnersFile, 'a', :encoding => 'UTF-8')
+	file.puts(winner)
+	file.close
 end
 
 if ARGV.length > 0
 	availableStudents = setUpStudents(ARGV[0])
-	availableStudents = eliminateStudents(availableStudents)	
-	winner = availableStudents
-	displayWinner(winner)
-	writeWinnerToFile(winner)
+	availableStudents = eliminateStudents(availableStudents)
+	if availableStudents.length > 0
+		winner = availableStudents
+		displayWinner(winner[0])
+		writeWinnerToFile(winner[0])
+	else
+		puts "No more student to draw from"
+	end
 else
 	puts "No input file given"
 end
