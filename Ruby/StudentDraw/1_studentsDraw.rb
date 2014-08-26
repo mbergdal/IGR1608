@@ -2,7 +2,7 @@ students = ["Pelle", "Kåre", "Svein", "Marie", "Bertil"]
 studentsNotPresent = ["Kåre"]
 excludedStudents = []
 
-availableStudents = students.sort - excludedStudents - studentsNotPresent
+availableStudents = students - excludedStudents - studentsNotPresent
 
 index = rand(availableStudents.length)
 

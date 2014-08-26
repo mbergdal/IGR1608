@@ -22,7 +22,6 @@ class Student
 	end
 end
 
-
 personA = Student.new
 personA.setName "Mads"
 personA.setNumberOfClasses 2
