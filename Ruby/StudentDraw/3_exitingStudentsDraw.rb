@@ -24,6 +24,7 @@ availableStudents = setUpStudents
 while (availableStudents.length > 1) do
 	studentToRemove = getStudentToRemoveFrom availableStudents
 	availableStudents -= [studentToRemove]
+	#availableStudents = availableStudents - [studentToRemove]
 	print "Eliminating student"
 	3.times do
  		sleep(1)

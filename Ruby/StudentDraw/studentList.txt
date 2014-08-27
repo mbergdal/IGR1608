@@ -1,5 +1,5 @@
 Pelle
 #Kåre
-Svein
-Marie
+#Svein
+#Marie
 Bertil

@@ -1,6 +1,6 @@
 $winnersFile = "winners.txt"
 $notPresentFile = "notPresent.txt"
-$studentFile = "studentList2.txt"
+$studentFile = "classList.txt"
 
 def getHashWithStudentsFromFile filename
 	students = {}
@@ -64,12 +64,12 @@ def eliminateStudents availableStudents
 		availableStudents.delete(studentToRemove)
 		print "Eliminating student"
 		3.times do
-	 		#sleep(1)
+	 		sleep(0.5)
 	 		print ". "
 	  		$stdout.flush
 		end			
 		puts studentToRemove
-		#sleep(1)
+		sleep(1)
 	end
 	return availableStudents
 end
@@ -90,6 +90,7 @@ availableStudents = eliminateStudents(availableStudents)
 if availableStudents.length > 0
 	winner = availableStudents.shift
 	displayWinner(winner[0])
+	writeWinnerToFile(winner[0])
 else
 	puts "No more student to draw from"
 end

@@ -2,4 +2,4 @@ Pelle:13
 #Kåre:10
 Svein:10
 Marie:12
-Bertil:13
+Bertil:5
