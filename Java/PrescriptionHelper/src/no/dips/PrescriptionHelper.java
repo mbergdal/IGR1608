@@ -6,5 +6,4 @@ public class PrescriptionHelper {
 		Parser parser = new Parser();
 		parser.Start();
 	}
-
 }

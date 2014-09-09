@@ -1,0 +1,16 @@
+Mathias:5
+Vemund:4
+Jim:5
+Are:2
+Magnus:5
+Adrian:5
+Kristine:5
+Ingeborg:4
+Pavlo:5
+Rino:5
+Kristin:5
+Silje:5
+Lars:4
+Mats:5
+Aksel:1
+Thomas:2
