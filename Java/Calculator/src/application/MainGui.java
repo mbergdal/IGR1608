@@ -52,7 +52,7 @@ public class MainGui extends Application {
             AnchorPane mainView = (AnchorPane) loader.load();           
             rootLayout.setCenter(mainView);
             
-            //MainViewController controller = loader.getController();
+            CalculatorController controller = loader.getController();
             //String s = controller.toString();
         } catch (IOException e) {
             e.printStackTrace();

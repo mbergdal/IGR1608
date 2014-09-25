@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+<AnchorPane prefHeight="291.0" prefWidth="311.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CalculatorController">
+   <children>
+      <Label layoutX="56.0" layoutY="19.0" text="Input">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <TextField fx:id="inputTextField" alignment="CENTER" layoutX="52.0" layoutY="50.0" prefHeight="44.0" prefWidth="208.0">
+         <font>
+            <Font size="19.0" />
+         </font></TextField>
+      <TextField fx:id="resultTextField" alignment="CENTER" editable="false" focusTraversable="false" layoutX="52.0" layoutY="121.0" prefHeight="44.0" prefWidth="208.0">
+         <font>
+            <Font size="19.0" />
+         </font></TextField>
+      <Label layoutX="52.0" layoutY="94.0" text="Result">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <Button defaultButton="true" layoutX="46.0" layoutY="179.0" mnemonicParsing="false" onAction="#calculate" prefHeight="50.0" prefWidth="220.0" text="Calculate">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+   </children>
 </AnchorPane>
-
