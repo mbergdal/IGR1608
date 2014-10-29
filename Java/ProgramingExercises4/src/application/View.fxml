@@ -19,10 +19,10 @@
       <Label layoutX="19.0" layoutY="101.0" text="Answer:" />
       <Label layoutX="19.0" layoutY="25.0" text="Question:" />
       <Label fx:id="resultField" alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="195.0" prefHeight="17.0" prefWidth="211.0" text="Result here" textFill="#0ef056">
+      <Label fx:id="resultField" layoutX="19.0" layoutY="215.0" text="Time used:" />
          <font>
             <Font size="19.0" />
          </font>
       </Label>
-      <Label fx:id="timeUsedField" layoutX="19.0" layoutY="215.0" text="Time used:" />
    </children>
 </AnchorPane>
