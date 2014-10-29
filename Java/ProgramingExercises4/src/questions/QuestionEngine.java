@@ -1,7 +1,5 @@
 package questions;
 
-import utilities.QuestionsAndAnswersReader;
-
 public class QuestionEngine {
 	private Question[] questions = new Question[2];
 	private int currentQuestionIndex = 0;

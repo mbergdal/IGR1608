@@ -18,16 +18,14 @@ public class ViewController {
 	private Button answerButton;
 	
 	private QuestionEngine questionEngine;
-	private StopWatch stopWatch;
+
 	
 	public ViewController(){
 		questionEngine = new QuestionEngine();
-		stopWatch = new StopWatch();
 	}
 	
 	@FXML
 	private void initialize() {
-		stopWatch.start();
 		generateNewQuestion();
 		resultField.setVisible(false);
 	}
@@ -59,10 +57,7 @@ public class ViewController {
 	}
 
 	private void finishGame() {
-		stopWatch.stop();
 		answerButton.setDisable(true);
 		resultField.setText("Finished! Good work!");
-		System.out.printf(String.format("User used: %s", stopWatch.getElapsedTime()));
-		stopWatch.reset();
 	}
 }
