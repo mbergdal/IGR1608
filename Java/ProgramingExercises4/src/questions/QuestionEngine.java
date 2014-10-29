@@ -1,4 +1,6 @@
-package hidden;
+package questions;
+
+import utilities.QuestionsAndAnswersReader;
 
 public class QuestionEngine {
 	private Question[] questions = new Question[2];
