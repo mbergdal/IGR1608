@@ -23,5 +23,6 @@
             <Font size="19.0" />
          </font>
       </Label>
+      <Label fx:id="timeUsedField" layoutX="19.0" layoutY="215.0" text="Time used:" />
    </children>
 </AnchorPane>
