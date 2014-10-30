@@ -12,14 +12,16 @@
    <children>
       <TextField id="questionField" fx:id="answerField" layoutX="13.0" layoutY="118.0" prefHeight="25.0" prefWidth="228.0" />
       <Button fx:id="answerButton" defaultButton="true" layoutX="72.0" layoutY="149.0" mnemonicParsing="false" onAction="#onAnswerGiven" text="Submit answer" />
-      <Label fx:id="questionField" layoutX="14.0" layoutY="42.0" prefHeight="44.0" prefWidth="228.0" styleClass="custom-label" textAlignment="CENTER" wrapText="true" text="Question here">
+      <Label fx:id="questionField" layoutX="14.0" layoutY="42.0" prefHeight="44.0" prefWidth="228.0" styleClass="custom-label" text="Question here" textAlignment="CENTER" wrapText="true">
          <padding>
             <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
          </padding></Label>
       <Label layoutX="19.0" layoutY="101.0" text="Answer:" />
       <Label layoutX="19.0" layoutY="25.0" text="Question:" />
       <Label fx:id="resultField" alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="195.0" prefHeight="17.0" prefWidth="211.0" text="Result here" textFill="#0ef056">
-      <Label fx:id="resultField" layoutX="19.0" layoutY="215.0" text="Time used:" />
+         <text>
+         <Label fx:id="resultField" layoutX="19.0" layoutY="215.0" text="Time used:" />
+         </text>
          <font>
             <Font size="19.0" />
          </font>
