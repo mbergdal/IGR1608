@@ -1,5 +1,8 @@
 package test;
 
+import cards.Card;
+import cards.DeckOfCards;
+
 public class TestCards {
 
 	public static void main(String[] args) {
