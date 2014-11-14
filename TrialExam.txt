@@ -1,0 +1,200 @@
+Oppgaver:
+1) 
+Hva blir 'a' til slutt i dette eksempelet?
+int a = 3;
+	switch (a){
+		case 1:
+			a--;
+			break;
+		case 2:
+			a++;
+			break;
+		case 3:
+			a++;
+			a = a+8;
+		case 4:
+			a--;
+		default:
+			a++;
+	}
+	System.out.println(a);
+
+2)
+Hva blir y her?
+
+int x = 3; int y = 4;
+switch (x + 3) {
+  case 6: y = 0;
+  case 7: y = 1;
+  default: y += 1;
+}
+
+A. 1
+B. 2
+C. 3
+D. 4
+E. 0	
+
+3)
+Hvilke av disse deklarasjonene kompilerer ikke? 
+A.	int a = 0;
+B.	float b = 5f;
+C.	byte c = 128;
+D.	double d = 5.678;
+
+4)
+Hvis du skriver inn 1 2 3 når du kjører dette programmet, hva vil outputen bli?
+
+public class Test1 {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter three numbers: ");
+    double number1 = input.nextDouble();
+    double number2 = input.nextDouble();
+    double number3 = input.nextDouble();
+
+    // Compute average
+    double average = (number1 + number2 + number3) / 3;
+
+    // Display result
+    System.out.println(average);
+  }
+}
+
+A. 1.0
+B. 2.0
+C. 3.0
+D. 4.0
+
+5)
+Hvilke av følgende variabelnavn følger navnekonvensjonen i Java?
+A. radius
+B. Radius
+C. RADIUS
+D. findArea
+E. FindArea
+ 
+6)
+Hva blir 1 - 0.1 - 0.1 - 0.1 - 0.1 - 0.1 == 0.5?
+
+A. true
+B. false
+C. Der er ingen granti for at 1 - 0.1 - 0.1 - 0.1 - 0.1 - 0.1 == 0.5 er true.
+
+7) 
+Skriv metoden posNeg(int a, int b, boolean revert) slik at den returnerer true 
+hvis en av a og b er negative. Unntatt hvis variabelen revert er satt til true, 
+så returner true bare hvis både a og b er negative.
+Eks:
+posNeg(1, -1, false) → true
+posNeg(-1, 1, false) → true
+posNeg(-4, -5, true) → true
+
+8)
+Skriv metoden or35(int number) slik at den returnerer true hvis number er delelig med 3 eller 5 
+Eks:
+or35(3) → true
+or35(10) → true
+or35(8) → false
+
+9)
+Alle Java-applikasjoner må ha en metode som er ut som?
+
+A. public static Main(String[] args)
+B. public static Main(String args[])
+C. public static void main(String[] args)
+D. public void main(String[] args)
+E. public static main(String[] args)
+
+10)
+Gitt følgende metode:
+
+static void nPrint(String message, int n) {
+  while (n > 0) {
+    System.out.print(message);
+    n--;
+  }
+}
+
+Hva blir k etter å kalle metoden med:
+What is k after invoking nPrint("A message", k)?
+
+int k = 2;
+nPrint("A message", k);
+
+A. 0
+B. 1
+C. 2
+D. 3
+
+11)
+Analyser følgende kode:
+
+public class Test {
+  public static void main(String[] args) {
+    System.out.println(xMethod(5, 500L));
+  }
+
+  public static int xMethod(int n, long l) {
+    System.out.println("int, long");
+    return n;
+  }
+
+  public static long xMethod(long n, long l) {
+    System.out.println("long, long");
+    return n;
+  }
+}
+
+A. Programmet skriver ut: int, long etterfulgt av 5.
+B. Programmet skriver ut: long, long etterfulgt av 5.
+C. Programmet kjører fint, men skriver ut andre ting enn 5.
+D. Programmet kompilerer ikke.
+
+12)
+Hvor mange ganger skriver følgende program ut "Welcome to Java"? 
+
+int count = 0;
+do {
+  System.out.println("Welcome to Java");
+} while (count++ < 10);
+
+A. 8
+B. 9
+C. 10
+D. 11
+E. 0
+
+13)
+Anta at 'number' blir satt til 9. Hva skriver følgende program ut?
+
+import java.util.Scanner;
+
+public class Test {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter an integer: ");
+    int number = input.nextInt();
+
+    int i;
+
+    boolean isPrime = true;
+    for (i = 2; i < number && isPrime; i++) {
+      if (number % i == 0) {
+        isPrime = false;
+      }
+    }
+
+    System.out.println("i is " + i);
+
+    if (isPrime)
+      System.out.println(number + " is prime");
+    else
+      System.out.println(number + " is not prime");
+  }
+}
+
+A. i is 3 followed by 9 is prime
+B. i is 3 followed by 9 is not prime
+C. i is 4 followed by 9 is prime
+D. i is 4 followed by 9 is not prime
