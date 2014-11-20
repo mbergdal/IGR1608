@@ -1,0 +1,19 @@
+Oppgaver:
+ShoppingCart:
+Lag en klasse 'ShoppingCart' og en klasse 'Item'
+Lag deretter en klasse som har en main-metode som lager en ShoppingCart og lar brukeren skrive inn navn og pris for en vare som deretter legger varen i en ArrayList i klassen ShoppingCart. Når brukeren signaliserer at han er ferdig, skal ShoppingCart liste opp alle varene med pris per vare og samlet sum.
+
+StackOfIntegers:
+Implementer klassen StackOfIntegers:
+- stacken skal ha default kapasitet på 16 heltall men ha muligheten til å sette kapasiteten via en konstruktør.
+- metoder:
+	- push(int n) - Legger et element til i stacken
+		- dersom stacken er full skal det lages en ny array med dobbel kapasitet og eksisterende elementer flyttes over til denne. Deretter kan neste element legges til i stacken.
+	- pop() - returnerer det elementet som ligger øverst i stacken
+	- peak() - viser det elementet som ligger øverst i stacken uten å fjerne det fra stacken
+	- getSize() - returnerer antallet elementer som ligger i stacken
+- Lag en klasse som lager en slik stack og bruker den.
+
+9.8 s.362
+
+9.3 s.360

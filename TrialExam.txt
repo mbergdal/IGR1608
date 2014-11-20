@@ -36,7 +36,7 @@ D. 4
 E. 0	
 
 3)
-Hvilke av disse deklarasjonene kompilerer ikke? 
+Hvilken av disse deklarasjonene kompilerer ikke? 
 A.	int a = 0;
 B.	float b = 5f;
 C.	byte c = 128;
